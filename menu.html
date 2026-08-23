@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Brew & Bloom</title>
+<meta name="description" content="Browse the full Brew & Bloom menu: espresso, cappuccino, latte, cold coffee, matcha, sandwiches, pasta and desserts.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="container-edit flex items-center justify-between py-4">
+    <a href="index.html" class="logo-mark">Brew <span class="bloom-dot">&amp;</span> Bloom</a>
+    <nav class="hidden lg:flex items-center gap-8" aria-label="Primary">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="menu.html" class="nav-link active">Menu</a>
+      <a href="coffee.html" class="nav-link">Coffee</a>
+      <a href="food.html" class="nav-link">Food</a>
+      <a href="index.html#story" class="nav-link">Our Story</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="contact.html#visit" class="nav-link">Visit Us</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="contact.html#reserve" class="btn btn-primary">Reserve a Table</a>
+    </div>
+    <button id="nav-toggle" class="lg:hidden p-2" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </div>
+  <nav id="mobile-menu" class="lg:hidden overflow-hidden opacity-0" style="max-height:0;" aria-label="Mobile">
+    <div class="container-edit flex flex-col gap-1 pb-5 pt-1">
+      <a href="index.html" class="nav-link py-2">Home</a>
+      <a href="menu.html" class="nav-link py-2">Menu</a>
+      <a href="coffee.html" class="nav-link py-2">Coffee</a>
+      <a href="food.html" class="nav-link py-2">Food</a>
+      <a href="index.html#story" class="nav-link py-2">Our Story</a>
+      <a href="gallery.html" class="nav-link py-2">Gallery</a>
+      <a href="contact.html#visit" class="nav-link py-2">Visit Us</a>
+      <a href="contact.html" class="nav-link py-2">Contact</a>
+      <a href="contact.html#reserve" class="btn btn-primary justify-center mt-3">Reserve a Table</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="pt-16 pb-10 container-edit text-center">
+    <p class="eyebrow mb-3">The Full Menu</p>
+    <h1 class="text-4xl md:text-6xl mb-4">What we're pouring</h1>
+    <p class="max-w-lg mx-auto" style="color:var(--bark);">Eight counters, one page. Tap a category, save your favorites, come thirsty.</p>
+  </section>
+
+  <!-- Category tabs -->
+  <section class="container-edit sticky top-[73px] z-40 py-4" style="background:rgba(247,240,228,0.92); backdrop-filter:blur(8px);">
+    <div class="flex gap-2 overflow-x-auto pb-1" role="tablist" aria-label="Menu categories">
+      <button class="tab-btn active" data-tab-group="menu" data-tab-target="espresso" role="tab" aria-selected="true">Espresso</button>
+      <button class="tab-btn" data-tab-group="menu" data-tab-target="cappuccino" role="tab" aria-selected="false">Cappuccino</button>
+      <button class="tab-btn" data-tab-group="menu" data-tab-target="latte" role="tab" aria-selected="false">Latte</button>
+      <button class="tab-btn" data-tab-group="menu" data-tab-target="cold" role="tab" aria-selected="false">Cold Coffee</button>
+      <button class="tab-btn" data-tab-group="menu" data-tab-target="matcha" role="tab" aria-selected="false">Matcha</button>
+      <button class="tab-btn" data-tab-group="menu" data-tab-target="sandwiches" role="tab" aria-selected="false">Sandwiches</button>
+      <button class="tab-btn" data-tab-group="menu" data-tab-target="pasta" role="tab" aria-selected="false">Pasta</button>
+      <button class="tab-btn" data-tab-group="menu" data-tab-target="desserts" role="tab" aria-selected="false">Desserts</button>
+    </div>
+  </section>
+
+  <section class="container-edit py-12">
+
+    <!-- ESPRESSO -->
+    <div class="menu-panel active" data-panel-group="menu" data-panel="espresso">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Classic espresso shot in a small ceramic cup" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Classic Espresso</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Classic Espresso to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">A tight, syrupy double shot from our house blend. Cocoa and toasted nut.</p>
+            <p class="price text-lg">$3.50</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=80" alt="Freshly ground espresso beans close up" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Doppio</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Doppio to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Double the shot, same clarity. For the ones who need it strong and short.</p>
+            <p class="price text-lg">$4.00</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80" alt="Espresso macchiato with a dollop of foam" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Espresso Macchiato</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Espresso Macchiato to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Marked with a spoon of steamed milk foam. Bittersweet, barely diluted.</p>
+            <p class="price text-lg">$4.20</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- CAPPUCCINO -->
+    <div class="menu-panel" data-panel-group="menu" data-panel="cappuccino">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&q=80" alt="Classic cappuccino with thick microfoam" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Classic Cappuccino</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Classic Cappuccino to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Equal thirds espresso, steamed milk and microfoam. The daily ritual.</p>
+            <p class="price text-lg">$4.50</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1495465798138-718f86d1a4bd?w=600&q=80" alt="Cinnamon dusted cappuccino viewed from above" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Cinnamon Cappuccino</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Cinnamon Cappuccino to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Dusted with Ceylon cinnamon and a touch of raw sugar on the foam.</p>
+            <p class="price text-lg">$5.00</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=600&q=80" alt="Iced cappuccino served in a tall glass" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Iced Cappuccino</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Iced Cappuccino to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Cold-foamed for a lighter, cloud-like texture over iced espresso.</p>
+            <p class="price text-lg">$5.20</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- LATTE -->
+    <div class="menu-panel" data-panel-group="menu" data-panel="latte">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=600&q=80" alt="Vanilla bean latte with delicate latte art" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Vanilla Bean Latte</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Vanilla Bean Latte to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">House vanilla syrup made from real pods, folded into velvety steamed milk.</p>
+            <p class="price text-lg">$5.20</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1509785307050-d4066910ec1e?w=600&q=80" alt="Honey oat milk latte in a glass cup" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Honey Oat Latte</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Honey Oat Latte to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Oat milk steamed to caramel-sweetness with a drizzle of wildflower honey.</p>
+            <p class="price text-lg">$5.50</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=80" alt="Pistachio latte served at a wooden café table" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Pistachio Latte</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Pistachio Latte to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Roasted pistachio paste, steamed whole milk, crushed nuts on top.</p>
+            <p class="price text-lg">$5.80</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- COLD COFFEE -->
+    <div class="menu-panel" data-panel-group="menu" data-panel="cold">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Cold brew coffee over ice in a mason jar" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Slow Cold Brew</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Slow Cold Brew to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Steeped 18 hours. Low acidity, naturally sweet, no ice-melt dilution.</p>
+            <p class="price text-lg">$5.50</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&q=80" alt="Iced Americano with condensation on the glass" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Iced Americano</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Iced Americano to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Double espresso over ice and cold water. Sharp, clean, no frills.</p>
+            <p class="price text-lg">$4.50</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600&q=80" alt="Iced mocha topped with cream and cocoa dust" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Iced Mocha</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Iced Mocha to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Dark chocolate ganache, espresso, cold milk, a cloud of whipped cream.</p>
+            <p class="price text-lg">$6.00</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- MATCHA -->
+    <div class="menu-panel" data-panel-group="menu" data-panel="matcha">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=600&q=80" alt="Ceremonial grade matcha latte with layered green tones" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Ceremonial Matcha Latte</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Ceremonial Matcha Latte to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Stone-ground Uji matcha, whisked to order, steamed milk of your choice.</p>
+            <p class="price text-lg">$5.50</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=600&q=80" alt="Iced matcha latte with visible layering" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Iced Matcha</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Iced Matcha to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Chilled and shaken, poured over ice with a splash of oat milk.</p>
+            <p class="price text-lg">$5.80</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?w=600&q=80" alt="Matcha affogato with a scoop of vanilla ice cream" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Matcha Affogato</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Matcha Affogato to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">A hot shot of matcha poured over vanilla bean ice cream, table-side.</p>
+            <p class="price text-lg">$6.80</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- SANDWICHES -->
+    <div class="menu-panel" data-panel-group="menu" data-panel="sandwiches">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80" alt="Avocado and feta toast on sourdough" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Avocado &amp; Feta Toast</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Avocado & Feta Toast to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Crushed avocado, whipped feta, chili oil and seeds on toasted sourdough.</p>
+            <p class="price text-lg">$9.50</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Smoked turkey club sandwich sliced in half" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Smoked Turkey Club</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Smoked Turkey Club to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">House-smoked turkey, applewood bacon, tomato, greens on toasted milk bread.</p>
+            <p class="price text-lg">$11.50</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1481070555726-6be190f2bf0e?w=600&q=80" alt="Grilled caprese panini with melted mozzarella" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Caprese Panini</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Caprese Panini to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Fresh mozzarella, basil, heirloom tomato, balsamic glaze, pressed warm.</p>
+            <p class="price text-lg">$10.50</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- PASTA -->
+    <div class="menu-panel" data-panel-group="menu" data-panel="pasta">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1481931098730-318b6f776db0?w=600&q=80" alt="Truffle mushroom pasta plated with parmesan" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Truffle Mushroom Pasta</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Truffle Mushroom Pasta to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Wild mushrooms, black truffle butter, aged parmesan, fresh tagliatelle.</p>
+            <p class="price text-lg">$14.00</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600&q=80" alt="Basil pesto pasta with pine nuts" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Basil Pesto Pasta</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Basil Pesto Pasta to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">House-made basil pesto, toasted pine nuts, cherry tomato, pecorino.</p>
+            <p class="price text-lg">$12.50</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?w=600&q=80" alt="Spicy arrabbiata pasta with fresh herbs" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Spicy Arrabbiata</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Spicy Arrabbiata to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">San Marzano tomato, chili, garlic, a slow simmer and fresh basil.</p>
+            <p class="price text-lg">$13.00</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="menu-panel" data-panel-group="menu" data-panel="desserts">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80" alt="Slice of Basque burnt cheesecake" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Basque Cheesecake</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Basque Cheesecake to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Burnished top, creamy center, baked fresh every morning in-house.</p>
+            <p class="price text-lg">$6.50</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80" alt="Sticky date pudding with caramel sauce" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Sticky Date Pudding</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Sticky Date Pudding to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Warm date sponge, toffee sauce, vanilla bean ice cream.</p>
+            <p class="price text-lg">$7.00</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80" alt="Assorted fresh pastries on a marble counter" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Butter Croissant</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Butter Croissant to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Laminated 36 hours, baked to order, shatteringly flaky.</p>
+            <p class="price text-lg">$4.50</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1504630083234-14187a9df0f5?w=600&q=80" alt="Chocolate croissant and pastry assortment" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg leading-tight">Pain au Chocolat</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Pain au Chocolat to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Dark chocolate batons folded into our laminated croissant dough.</p>
+            <p class="price text-lg">$5.00</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="py-20 container-edit text-center">
+    <p class="eyebrow mb-3">Planning a visit?</p>
+    <h2 class="text-2xl md:text-4xl mb-6">Save your table before the morning rush</h2>
+    <a href="contact.html#reserve" class="btn btn-primary">Reserve a Table <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+  </section>
+
+</main>
+
+<footer class="site-footer py-16">
+  <div class="container-edit grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <p class="logo-mark mb-4">Brew &amp; Bloom</p>
+      <p class="text-sm" style="color:#c9bda3;">Specialty coffee, fresh food and a space made for conversations.</p>
+    </div>
+    <div>
+      <p class="footer-heading">Explore</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="menu.html">Full Menu</a></li>
+        <li><a href="coffee.html">Coffee</a></li>
+        <li><a href="food.html">Food &amp; Desserts</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Visit</p>
+      <ul class="space-y-2 text-sm" style="color:#c9bda3;">
+        <li>24 Maple &amp; 3rd, Riverside District</li>
+        <li>Mon–Fri · 8:00 AM – 10:00 PM</li>
+        <li>Sat–Sun · 8:00 AM – 11:00 PM</li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Contact</p>
+      <ul class="space-y-2 text-sm" style="color:#c9bda3;">
+        <li>hello@brewandbloom.co</li>
+        <li>(555) 213-0847</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-edit mt-12 pt-6 flex flex-col sm:flex-row justify-between gap-3 text-xs" style="border-top:1px solid rgba(247,240,228,0.12); color:#a1937a;">
+    <p>© <span data-year></span> Brew &amp; Bloom Coffee House. All rights reserved.</p>
+    <p>Crafted with care for slow mornings.</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

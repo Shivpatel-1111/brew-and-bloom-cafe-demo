@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visit & Contact — Brew & Bloom</title>
+<meta name="description" content="Find Brew & Bloom, check opening hours, reserve a table or send us a message.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="container-edit flex items-center justify-between py-4">
+    <a href="index.html" class="logo-mark">Brew <span class="bloom-dot">&amp;</span> Bloom</a>
+    <nav class="hidden lg:flex items-center gap-8" aria-label="Primary">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="menu.html" class="nav-link">Menu</a>
+      <a href="coffee.html" class="nav-link">Coffee</a>
+      <a href="food.html" class="nav-link">Food</a>
+      <a href="index.html#story" class="nav-link">Our Story</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="contact.html#visit" class="nav-link active">Visit Us</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="contact.html#reserve" class="btn btn-primary">Reserve a Table</a>
+    </div>
+    <button id="nav-toggle" class="lg:hidden p-2" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </div>
+  <nav id="mobile-menu" class="lg:hidden overflow-hidden opacity-0" style="max-height:0;" aria-label="Mobile">
+    <div class="container-edit flex flex-col gap-1 pb-5 pt-1">
+      <a href="index.html" class="nav-link py-2">Home</a>
+      <a href="menu.html" class="nav-link py-2">Menu</a>
+      <a href="coffee.html" class="nav-link py-2">Coffee</a>
+      <a href="food.html" class="nav-link py-2">Food</a>
+      <a href="index.html#story" class="nav-link py-2">Our Story</a>
+      <a href="gallery.html" class="nav-link py-2">Gallery</a>
+      <a href="contact.html#visit" class="nav-link py-2">Visit Us</a>
+      <a href="contact.html" class="nav-link py-2">Contact</a>
+      <a href="contact.html#reserve" class="btn btn-primary justify-center mt-3">Reserve a Table</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="pt-16 pb-10 container-edit text-center">
+    <p class="eyebrow mb-3">Visit &amp; Contact</p>
+    <h1 class="text-4xl md:text-6xl mb-4">Come find us</h1>
+    <p class="max-w-lg mx-auto" style="color:var(--bark);">One corner, easy to reach, easier to stay a while.</p>
+  </section>
+
+  <!-- FIND US -->
+  <section id="visit" class="pb-20 container-edit scroll-mt-24">
+    <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+
+      <div class="paper-card overflow-hidden">
+        <iframe
+          title="Map showing the location of Brew & Bloom on Maple & 3rd, Riverside District"
+          src="https://maps.google.com/maps?q=coffee%20shop%20riverside%20district&t=&z=14&ie=UTF8&iwloc=&output=embed"
+          width="100%" height="100%" style="min-height:380px; border:0;" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="paper-card p-8 md:p-10">
+        <h2 class="text-2xl mb-6">Find Us</h2>
+
+        <div class="flex gap-4 mb-5">
+          <i data-lucide="map-pin" class="w-5 h-5 mt-1 shrink-0" style="color:var(--bloom);"></i>
+          <div>
+            <p class="font-semibold">Address</p>
+            <p class="text-sm" style="color:var(--bark);">24 Maple &amp; 3rd, Riverside District, Portland, OR 97201</p>
+          </div>
+        </div>
+        <div class="flex gap-4 mb-5">
+          <i data-lucide="phone" class="w-5 h-5 mt-1 shrink-0" style="color:var(--bloom);"></i>
+          <div>
+            <p class="font-semibold">Phone</p>
+            <p class="text-sm" style="color:var(--bark);">(555) 213-0847</p>
+          </div>
+        </div>
+        <div class="flex gap-4 mb-7">
+          <i data-lucide="mail" class="w-5 h-5 mt-1 shrink-0" style="color:var(--bloom);"></i>
+          <div>
+            <p class="font-semibold">Email</p>
+            <p class="text-sm" style="color:var(--bark);">hello@brewandbloom.co</p>
+          </div>
+        </div>
+
+        <hr class="hairline mb-7">
+
+        <h3 class="text-lg mb-4">Opening Hours</h3>
+        <div class="space-y-2 mb-5 text-sm">
+          <div class="flex justify-between py-2" style="border-bottom:1px solid var(--line);">
+            <span>Monday – Friday</span><span class="font-mono">8:00 AM – 10:00 PM</span>
+          </div>
+          <div class="flex justify-between py-2" style="border-bottom:1px solid var(--line);">
+            <span>Saturday – Sunday</span><span class="font-mono">8:00 AM – 11:00 PM</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2" data-hours-indicator>
+          <span class="status-dot"></span>
+          <span class="text-sm font-mono" data-status-label>Checking today's hours…</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section id="reserve" class="py-20 scroll-mt-24" style="background:var(--beige);">
+    <div class="container-edit grid lg:grid-cols-2 gap-12">
+
+      <div>
+        <p class="eyebrow mb-3">Reservation</p>
+        <h2 class="text-3xl md:text-4xl mb-5">Reserve your table</h2>
+        <p class="mb-6" style="color:var(--bark);">Tell us when you're coming and how many chairs to pull up. We'll confirm by email or phone within the hour.</p>
+        <ul class="space-y-3 text-sm" style="color:var(--bark);">
+          <li class="flex gap-3"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0" style="color:var(--bloom);"></i>Tables held for 15 minutes past booking time</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0" style="color:var(--bloom);"></i>Groups of 8+, please call ahead</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0" style="color:var(--bloom);"></i>Free to cancel or change any time before your visit</li>
+        </ul>
+      </div>
+
+      <div class="paper-card p-8 md:p-10">
+        <form id="reservation-form" novalidate>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div class="field sm:col-span-2">
+              <label for="res-name">Name</label>
+              <input type="text" id="res-name" name="name" placeholder="Your full name" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="res-phone">Phone</label>
+              <input type="tel" id="res-phone" name="phone" placeholder="(555) 000-0000" required autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="res-guests">Guests</label>
+              <select id="res-guests" name="guests" required>
+                <option value="">Select</option>
+                <option>1 guest</option>
+                <option>2 guests</option>
+                <option>3 guests</option>
+                <option>4 guests</option>
+                <option>5 guests</option>
+                <option>6+ guests</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="res-date">Date</label>
+              <input type="date" id="res-date" name="date" required>
+            </div>
+            <div class="field">
+              <label for="res-time">Time</label>
+              <input type="time" id="res-time" name="time" required>
+            </div>
+            <div class="field sm:col-span-2">
+              <label for="res-message">Message <span class="normal-case">(optional)</span></label>
+              <textarea id="res-message" name="message" rows="3" placeholder="Window seat, birthday, dietary notes…"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary w-full justify-center mt-7">Confirm Reservation <i data-lucide="calendar-check" class="w-4 h-4"></i></button>
+        </form>
+
+        <div id="reservation-success" tabindex="-1" hidden>
+          <div class="text-center py-6">
+            <div class="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-5" style="background:rgba(53,81,58,0.1);">
+              <i data-lucide="check" class="w-6 h-6" style="color:var(--bloom);"></i>
+            </div>
+            <h3 class="text-xl mb-2">Thank you, <span data-guest-name>friend</span>!</h3>
+            <p style="color:var(--bark);">Your table is requested. We'll confirm the details by phone or email shortly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GENERAL CONTACT -->
+  <section id="contact-form" class="py-20 container-edit scroll-mt-24">
+    <div class="grid lg:grid-cols-2 gap-12">
+      <div>
+        <p class="eyebrow mb-3">Contact</p>
+        <h2 class="text-3xl md:text-4xl mb-5">Questions, catering, press</h2>
+        <p class="mb-8" style="color:var(--bark);">For anything outside a table reservation — private events, wholesale beans, media — send us a note and we'll route it to the right person.</p>
+
+        <div class="flex gap-4 mb-5">
+          <i data-lucide="instagram" class="w-5 h-5 mt-1 shrink-0" style="color:var(--bloom);"></i>
+          <div><p class="font-semibold">Instagram</p><p class="text-sm" style="color:var(--bark);">@brewandbloom</p></div>
+        </div>
+        <div class="flex gap-4">
+          <i data-lucide="clock" class="w-5 h-5 mt-1 shrink-0" style="color:var(--bloom);"></i>
+          <div><p class="font-semibold">Response time</p><p class="text-sm" style="color:var(--bark);">Within one business day</p></div>
+        </div>
+      </div>
+
+      <form class="paper-card p-8 md:p-10" onsubmit="event.preventDefault(); this.reset(); this.querySelector('[data-contact-success]').hidden=false;">
+        <div class="field mb-5">
+          <label for="c-name">Name</label>
+          <input type="text" id="c-name" placeholder="Your full name" required autocomplete="name">
+        </div>
+        <div class="field mb-5">
+          <label for="c-email">Email</label>
+          <input type="email" id="c-email" placeholder="you@example.com" required autocomplete="email">
+        </div>
+        <div class="field mb-6">
+          <label for="c-msg">Message</label>
+          <textarea id="c-msg" rows="4" placeholder="How can we help?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-full justify-center">Send Message <i data-lucide="send" class="w-4 h-4"></i></button>
+        <p data-contact-success hidden class="text-sm text-center mt-4" style="color:var(--bloom-dark);">Thanks — your message is on its way to us.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer py-16">
+  <div class="container-edit grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <p class="logo-mark mb-4">Brew &amp; Bloom</p>
+      <p class="text-sm" style="color:#c9bda3;">Specialty coffee, fresh food and a space made for conversations.</p>
+    </div>
+    <div>
+      <p class="footer-heading">Explore</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="menu.html">Full Menu</a></li>
+        <li><a href="coffee.html">Coffee</a></li>
+        <li><a href="food.html">Food &amp; Desserts</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Visit</p>
+      <ul class="space-y-2 text-sm" style="color:#c9bda3;">
+        <li>24 Maple &amp; 3rd, Riverside District</li>
+        <li>Mon–Fri · 8:00 AM – 10:00 PM</li>
+        <li>Sat–Sun · 8:00 AM – 11:00 PM</li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Contact</p>
+      <ul class="space-y-2 text-sm" style="color:#c9bda3;">
+        <li>hello@brewandbloom.co</li>
+        <li>(555) 213-0847</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-edit mt-12 pt-6 flex flex-col sm:flex-row justify-between gap-3 text-xs" style="border-top:1px solid rgba(247,240,228,0.12); color:#a1937a;">
+    <p>© <span data-year></span> Brew &amp; Bloom Coffee House. All rights reserved.</p>
+    <p>Crafted with care for slow mornings.</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

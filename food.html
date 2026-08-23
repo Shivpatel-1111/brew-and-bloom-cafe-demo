@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food — Brew & Bloom</title>
+<meta name="description" content="Breakfast, food and desserts at Brew & Bloom: fresh toasts, pasta, sandwiches and house-baked pastries.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="container-edit flex items-center justify-between py-4">
+    <a href="index.html" class="logo-mark">Brew <span class="bloom-dot">&amp;</span> Bloom</a>
+    <nav class="hidden lg:flex items-center gap-8" aria-label="Primary">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="menu.html" class="nav-link">Menu</a>
+      <a href="coffee.html" class="nav-link">Coffee</a>
+      <a href="food.html" class="nav-link active">Food</a>
+      <a href="index.html#story" class="nav-link">Our Story</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="contact.html#visit" class="nav-link">Visit Us</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="contact.html#reserve" class="btn btn-primary">Reserve a Table</a>
+    </div>
+    <button id="nav-toggle" class="lg:hidden p-2" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </div>
+  <nav id="mobile-menu" class="lg:hidden overflow-hidden opacity-0" style="max-height:0;" aria-label="Mobile">
+    <div class="container-edit flex flex-col gap-1 pb-5 pt-1">
+      <a href="index.html" class="nav-link py-2">Home</a>
+      <a href="menu.html" class="nav-link py-2">Menu</a>
+      <a href="coffee.html" class="nav-link py-2">Coffee</a>
+      <a href="food.html" class="nav-link py-2">Food</a>
+      <a href="index.html#story" class="nav-link py-2">Our Story</a>
+      <a href="gallery.html" class="nav-link py-2">Gallery</a>
+      <a href="contact.html#visit" class="nav-link py-2">Visit Us</a>
+      <a href="contact.html" class="nav-link py-2">Contact</a>
+      <a href="contact.html#reserve" class="btn btn-primary justify-center mt-3">Reserve a Table</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="pt-16 pb-10 container-edit text-center">
+    <p class="eyebrow mb-3">Food</p>
+    <h1 class="text-4xl md:text-6xl mb-4">Made to slow you down</h1>
+    <p class="max-w-lg mx-auto" style="color:var(--bark);">Breakfast through late afternoon, baked and plated in-house.</p>
+  </section>
+
+  <!-- BREAKFAST -->
+  <section class="py-16 container-edit">
+    <div class="flex items-center gap-4 mb-10 reveal">
+      <h2 class="text-3xl md:text-4xl">Breakfast</h2>
+      <span class="divider-gold flex-1"></span>
+      <span class="eyebrow">8 – 11 AM</span>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <article class="paper-card reveal">
+        <div class="card-photo"><img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?w=600&q=80" alt="Stack of pancakes with syrup and berries" loading="lazy"></div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 class="text-lg">Buttermilk Pancakes</h3>
+            <button class="fav-btn" aria-pressed="false" aria-label="Save Buttermilk Pancakes to favorites"><i data-lucide="heart"></i></button>
+          </div>
+          <p class="text-sm mb-3" style="color:var(--bark);">Whipped mascarpone, maple, seasonal berries, stacked three high.</p>
+          <p class="price text-lg">$10.50</p>
+        </div>
+      </article>
+
+      <article class="paper-card reveal" style="transition-delay:80ms;">
+        <div class="card-photo"><img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=600&q=80" alt="Full breakfast plate with eggs and greens" loading="lazy"></div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 class="text-lg">The Morning Plate</h3>
+            <button class="fav-btn" aria-pressed="false" aria-label="Save The Morning Plate to favorites"><i data-lucide="heart"></i></button>
+          </div>
+          <p class="text-sm mb-3" style="color:var(--bark);">Two eggs your way, herb greens, roasted tomato, sourdough toast.</p>
+          <p class="price text-lg">$11.00</p>
+        </div>
+      </article>
+
+      <article class="paper-card reveal" style="transition-delay:160ms;">
+        <div class="card-photo"><img src="https://images.unsplash.com/photo-1504630083234-14187a9df0f5?w=600&q=80" alt="Fresh butter croissant on a plate" loading="lazy"></div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 class="text-lg">Croissant &amp; Jam</h3>
+            <button class="fav-btn" aria-pressed="false" aria-label="Save Croissant and Jam to favorites"><i data-lucide="heart"></i></button>
+          </div>
+          <p class="text-sm mb-3" style="color:var(--bark);">Laminated in-house, served warm with small-batch seasonal jam.</p>
+          <p class="price text-lg">$5.50</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- FOOD -->
+  <section class="py-16" style="background:var(--beige);">
+    <div class="container-edit">
+      <div class="flex items-center gap-4 mb-10 reveal">
+        <h2 class="text-3xl md:text-4xl">Food</h2>
+        <span class="divider-gold flex-1"></span>
+        <span class="eyebrow">11 AM – Close</span>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="paper-card reveal">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80" alt="Avocado and feta toast" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg">Avocado &amp; Feta Toast</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Avocado & Feta Toast to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Crushed avocado, whipped feta, chili oil, seeds, sourdough.</p>
+            <p class="price text-lg">$9.50</p>
+          </div>
+        </article>
+
+        <article class="paper-card reveal" style="transition-delay:80ms;">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1481931098730-318b6f776db0?w=600&q=80" alt="Truffle mushroom pasta" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg">Truffle Mushroom Pasta</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Truffle Mushroom Pasta to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">Wild mushrooms, black truffle butter, aged parmesan, tagliatelle.</p>
+            <p class="price text-lg">$14.00</p>
+          </div>
+        </article>
+
+        <article class="paper-card reveal" style="transition-delay:160ms;">
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Smoked turkey club sandwich" loading="lazy"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-lg">Smoked Turkey Club</h3>
+              <button class="fav-btn" aria-pressed="false" aria-label="Save Smoked Turkey Club to favorites"><i data-lucide="heart"></i></button>
+            </div>
+            <p class="text-sm mb-3" style="color:var(--bark);">House-smoked turkey, bacon, tomato, greens, toasted milk bread.</p>
+            <p class="price text-lg">$11.50</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESSERTS -->
+  <section class="py-16 container-edit">
+    <div class="flex items-center gap-4 mb-10 reveal">
+      <h2 class="text-3xl md:text-4xl">Desserts</h2>
+      <span class="divider-gold flex-1"></span>
+      <span class="eyebrow">Baked Daily</span>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <article class="paper-card reveal">
+        <div class="card-photo"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80" alt="Basque burnt cheesecake slice" loading="lazy"></div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 class="text-lg">Basque Cheesecake</h3>
+            <button class="fav-btn" aria-pressed="false" aria-label="Save Basque Cheesecake to favorites"><i data-lucide="heart"></i></button>
+          </div>
+          <p class="text-sm mb-3" style="color:var(--bark);">Burnished top, creamy center, baked fresh every morning.</p>
+          <p class="price text-lg">$6.50</p>
+        </div>
+      </article>
+
+      <article class="paper-card reveal" style="transition-delay:80ms;">
+        <div class="card-photo"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80" alt="Sticky date pudding with caramel sauce" loading="lazy"></div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 class="text-lg">Sticky Date Pudding</h3>
+            <button class="fav-btn" aria-pressed="false" aria-label="Save Sticky Date Pudding to favorites"><i data-lucide="heart"></i></button>
+          </div>
+          <p class="text-sm mb-3" style="color:var(--bark);">Warm date sponge, toffee sauce, vanilla bean ice cream.</p>
+          <p class="price text-lg">$7.00</p>
+        </div>
+      </article>
+
+      <article class="paper-card reveal" style="transition-delay:160ms;">
+        <div class="card-photo"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80" alt="Assorted fresh pastries on a counter" loading="lazy"></div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 class="text-lg">Pastry Basket</h3>
+            <button class="fav-btn" aria-pressed="false" aria-label="Save Pastry Basket to favorites"><i data-lucide="heart"></i></button>
+          </div>
+          <p class="text-sm mb-3" style="color:var(--bark);">A rotating basket of the morning's laminated bakes, chef's pick.</p>
+          <p class="price text-lg">$8.00</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="py-20 container-edit text-center">
+    <p class="eyebrow mb-3">Hungry for more?</p>
+    <h2 class="text-2xl md:text-4xl mb-6">See the entire counter on our full menu</h2>
+    <a href="menu.html" class="btn btn-primary">View Full Menu <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+  </section>
+
+</main>
+
+<footer class="site-footer py-16">
+  <div class="container-edit grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <p class="logo-mark mb-4">Brew &amp; Bloom</p>
+      <p class="text-sm" style="color:#c9bda3;">Specialty coffee, fresh food and a space made for conversations.</p>
+    </div>
+    <div>
+      <p class="footer-heading">Explore</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="menu.html">Full Menu</a></li>
+        <li><a href="coffee.html">Coffee</a></li>
+        <li><a href="food.html">Food &amp; Desserts</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Visit</p>
+      <ul class="space-y-2 text-sm" style="color:#c9bda3;">
+        <li>24 Maple &amp; 3rd, Riverside District</li>
+        <li>Mon–Fri · 8:00 AM – 10:00 PM</li>
+        <li>Sat–Sun · 8:00 AM – 11:00 PM</li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Contact</p>
+      <ul class="space-y-2 text-sm" style="color:#c9bda3;">
+        <li>hello@brewandbloom.co</li>
+        <li>(555) 213-0847</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-edit mt-12 pt-6 flex flex-col sm:flex-row justify-between gap-3 text-xs" style="border-top:1px solid rgba(247,240,228,0.12); color:#a1937a;">
+    <p>© <span data-year></span> Brew &amp; Bloom Coffee House. All rights reserved.</p>
+    <p>Crafted with care for slow mornings.</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

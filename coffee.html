@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee — Brew & Bloom</title>
+<meta name="description" content="Meet the single-origin coffees behind Brew & Bloom: where they're grown, how we roast them, and the brew methods we pour them through.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="container-edit flex items-center justify-between py-4">
+    <a href="index.html" class="logo-mark">Brew <span class="bloom-dot">&amp;</span> Bloom</a>
+    <nav class="hidden lg:flex items-center gap-8" aria-label="Primary">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="menu.html" class="nav-link">Menu</a>
+      <a href="coffee.html" class="nav-link active">Coffee</a>
+      <a href="food.html" class="nav-link">Food</a>
+      <a href="index.html#story" class="nav-link">Our Story</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="contact.html#visit" class="nav-link">Visit Us</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="contact.html#reserve" class="btn btn-primary">Reserve a Table</a>
+    </div>
+    <button id="nav-toggle" class="lg:hidden p-2" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </div>
+  <nav id="mobile-menu" class="lg:hidden overflow-hidden opacity-0" style="max-height:0;" aria-label="Mobile">
+    <div class="container-edit flex flex-col gap-1 pb-5 pt-1">
+      <a href="index.html" class="nav-link py-2">Home</a>
+      <a href="menu.html" class="nav-link py-2">Menu</a>
+      <a href="coffee.html" class="nav-link py-2">Coffee</a>
+      <a href="food.html" class="nav-link py-2">Food</a>
+      <a href="index.html#story" class="nav-link py-2">Our Story</a>
+      <a href="gallery.html" class="nav-link py-2">Gallery</a>
+      <a href="contact.html#visit" class="nav-link py-2">Visit Us</a>
+      <a href="contact.html" class="nav-link py-2">Contact</a>
+      <a href="contact.html#reserve" class="btn btn-primary justify-center mt-3">Reserve a Table</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- Intro -->
+  <section class="pt-16 pb-6 container-edit">
+    <div class="grid lg:grid-cols-12 gap-8 items-end">
+      <div class="lg:col-span-7 reveal">
+        <p class="eyebrow mb-3">Coffee</p>
+        <h1 class="text-4xl md:text-6xl">Nine farms. One roasting bench.</h1>
+      </div>
+      <p class="lg:col-span-5 text-sm reveal" style="color:var(--bark);">
+        We cup every lot before it's a menu item, roast in small batches twice a week, and print the origin on every bag — the same way you'll see it on the cards below.
+      </p>
+    </div>
+  </section>
+
+  <!-- Origin lots -->
+  <section class="py-16 container-edit">
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <article class="paper-card reveal overflow-hidden">
+        <div class="grid grid-cols-5">
+          <div class="col-span-2 card-photo" style="aspect-ratio:1/1;">
+            <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=500&q=80" alt="Kirinyaga Peaberry latte art" loading="lazy">
+          </div>
+          <div class="col-span-3 p-6">
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <h3 class="text-xl">Kirinyaga Peaberry</h3>
+              <span class="origin-stamp !w-16 !h-16"><span class="stamp-top">Kenya</span><span class="stamp-main">1750m</span></span>
+            </div>
+            <p class="text-sm mb-2" style="color:var(--bark);">Washed · Peaberry lot</p>
+            <p class="text-sm" style="color:var(--bark);">Blackcurrant, brown sugar, clean citrus finish.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="paper-card reveal overflow-hidden" style="transition-delay:80ms;">
+        <div class="grid grid-cols-5">
+          <div class="col-span-2 card-photo" style="aspect-ratio:1/1;">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&q=80" alt="Finca Santa Elena roasted beans" loading="lazy">
+          </div>
+          <div class="col-span-3 p-6">
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <h3 class="text-xl">Finca Santa Elena</h3>
+              <span class="origin-stamp !w-16 !h-16"><span class="stamp-top">Colombia</span><span class="stamp-main">1900m</span></span>
+            </div>
+            <p class="text-sm mb-2" style="color:var(--bark);">Honey process · Family farm</p>
+            <p class="text-sm" style="color:var(--bark);">Red apple, caramel, soft floral aroma.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="paper-card reveal overflow-hidden" style="transition-delay:160ms;">
+        <div class="grid grid-cols-5">
+          <div class="col-span-2 card-photo" style="aspect-ratio:1/1;">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500&q=80" alt="Sumatra Mandheling beans" loading="lazy">
+          </div>
+          <div class="col-span-3 p-6">
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <h3 class="text-xl">Mandheling Reserve</h3>
+              <span class="origin-stamp !w-16 !h-16"><span class="stamp-top">Sumatra</span><span class="stamp-main">1300m</span></span>
+            </div>
+            <p class="text-sm mb-2" style="color:var(--bark);">Wet-hulled · Full body</p>
+            <p class="text-sm" style="color:var(--bark);">Cedar, dark cocoa, low acidity, long finish.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="paper-card reveal overflow-hidden" style="transition-delay:240ms;">
+        <div class="grid grid-cols-5">
+          <div class="col-span-2 card-photo" style="aspect-ratio:1/1;">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=500&q=80" alt="Yirgacheffe beans up close" loading="lazy">
+          </div>
+          <div class="col-span-3 p-6">
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <h3 class="text-xl">Yirgacheffe G1</h3>
+              <span class="origin-stamp !w-16 !h-16"><span class="stamp-top">Ethiopia</span><span class="stamp-main">2000m</span></span>
+            </div>
+            <p class="text-sm mb-2" style="color:var(--bark);">Natural process · Heirloom varietal</p>
+            <p class="text-sm" style="color:var(--bark);">Jasmine, stone fruit, bright bergamot.</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Brew methods -->
+  <section class="py-20" style="background:var(--beige);">
+    <div class="container-edit">
+      <div class="mb-12 reveal">
+        <p class="eyebrow mb-3">How We Brew</p>
+        <h2 class="text-3xl md:text-5xl max-w-xl">Pick your method, we'll pick your beans</h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="reveal">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center mb-4" style="background:var(--paper); border:1px solid var(--line);">
+            <i data-lucide="coffee" class="w-5 h-5" style="color:var(--bloom);"></i>
+          </div>
+          <h3 class="text-lg mb-2">Espresso</h3>
+          <p class="text-sm" style="color:var(--bark);">25-second pull, 9 bars, the full-bodied everyday standard.</p>
+        </div>
+        <div class="reveal" style="transition-delay:80ms;">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center mb-4" style="background:var(--paper); border:1px solid var(--line);">
+            <i data-lucide="droplet" class="w-5 h-5" style="color:var(--bloom);"></i>
+          </div>
+          <h3 class="text-lg mb-2">Pour-Over</h3>
+          <p class="text-sm" style="color:var(--bark);">V60, single cup, brewed to order for clarity in every origin.</p>
+        </div>
+        <div class="reveal" style="transition-delay:160ms;">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center mb-4" style="background:var(--paper); border:1px solid var(--line);">
+            <i data-lucide="thermometer-snowflake" class="w-5 h-5" style="color:var(--bloom);"></i>
+          </div>
+          <h3 class="text-lg mb-2">Cold Brew</h3>
+          <p class="text-sm" style="color:var(--bark);">18-hour steep, filtered slow, bottled fresh every other day.</p>
+        </div>
+        <div class="reveal" style="transition-delay:240ms;">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center mb-4" style="background:var(--paper); border:1px solid var(--line);">
+            <i data-lucide="gauge" class="w-5 h-5" style="color:var(--bloom);"></i>
+          </div>
+          <h3 class="text-lg mb-2">AeroPress</h3>
+          <p class="text-sm" style="color:var(--bark);">Full immersion, quick pressure, a rounder cup on request.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 container-edit text-center">
+    <p class="eyebrow mb-3">Thirsty yet?</p>
+    <h2 class="text-2xl md:text-4xl mb-6">See every pour on the full menu</h2>
+    <a href="menu.html" class="btn btn-primary">View Full Menu <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+  </section>
+
+</main>
+
+<footer class="site-footer py-16">
+  <div class="container-edit grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <p class="logo-mark mb-4">Brew &amp; Bloom</p>
+      <p class="text-sm" style="color:#c9bda3;">Specialty coffee, fresh food and a space made for conversations.</p>
+    </div>
+    <div>
+      <p class="footer-heading">Explore</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="menu.html">Full Menu</a></li>
+        <li><a href="coffee.html">Coffee</a></li>
+        <li><a href="food.html">Food &amp; Desserts</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Visit</p>
+      <ul class="space-y-2 text-sm" style="color:#c9bda3;">
+        <li>24 Maple &amp; 3rd, Riverside District</li>
+        <li>Mon–Fri · 8:00 AM – 10:00 PM</li>
+        <li>Sat–Sun · 8:00 AM – 11:00 PM</li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Contact</p>
+      <ul class="space-y-2 text-sm" style="color:#c9bda3;">
+        <li>hello@brewandbloom.co</li>
+        <li>(555) 213-0847</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-edit mt-12 pt-6 flex flex-col sm:flex-row justify-between gap-3 text-xs" style="border-top:1px solid rgba(247,240,228,0.12); color:#a1937a;">
+    <p>© <span data-year></span> Brew &amp; Bloom Coffee House. All rights reserved.</p>
+    <p>Crafted with care for slow mornings.</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brew & Bloom — Specialty Coffee &amp; Slow Mornings</title>
+<meta name="description" content="Brew & Bloom is a specialty coffee house serving single-origin espresso, matcha and fresh food in a warm, editorial space made for slow conversations.">
+<meta property="og:title" content="Brew & Bloom — Good Coffee. Slow Moments.">
+<meta property="og:description" content="Specialty coffee, fresh food and a space made for conversations.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&q=80">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============================= HEADER / NAV ============================= -->
+<header class="site-header">
+  <div class="container-edit flex items-center justify-between py-4">
+    <a href="index.html" class="logo-mark">Brew <span class="bloom-dot">&amp;</span> Bloom</a>
+
+    <nav class="hidden lg:flex items-center gap-8" aria-label="Primary">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="menu.html" class="nav-link">Menu</a>
+      <a href="coffee.html" class="nav-link">Coffee</a>
+      <a href="food.html" class="nav-link">Food</a>
+      <a href="index.html#story" class="nav-link">Our Story</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="contact.html#visit" class="nav-link">Visit Us</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="contact.html#reserve" class="btn btn-primary">Reserve a Table</a>
+    </div>
+
+    <button id="nav-toggle" class="lg:hidden p-2" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </div>
+
+  <nav id="mobile-menu" class="lg:hidden overflow-hidden opacity-0" style="max-height:0;" aria-label="Mobile">
+    <div class="container-edit flex flex-col gap-1 pb-5 pt-1">
+      <a href="index.html" class="nav-link py-2">Home</a>
+      <a href="menu.html" class="nav-link py-2">Menu</a>
+      <a href="coffee.html" class="nav-link py-2">Coffee</a>
+      <a href="food.html" class="nav-link py-2">Food</a>
+      <a href="index.html#story" class="nav-link py-2">Our Story</a>
+      <a href="gallery.html" class="nav-link py-2">Gallery</a>
+      <a href="contact.html#visit" class="nav-link py-2">Visit Us</a>
+      <a href="contact.html" class="nav-link py-2">Contact</a>
+      <a href="contact.html#reserve" class="btn btn-primary justify-center mt-3">Reserve a Table</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1600&q=80"
+           alt="Warm, plant-filled interior of Brew & Bloom coffee house with wooden tables and morning light">
+    </div>
+
+    <!-- signature ambient steam -->
+    <div class="steam-wrap hidden md:block" style="right:14%; top:16%; width:120px;">
+      <svg viewBox="0 0 100 220" width="120" height="220">
+        <path class="steam-path" d="M50 200 C 20 160, 80 140, 50 100 C 20 60, 80 40, 50 0" />
+        <path class="steam-path" d="M30 200 C 5 160, 60 140, 30 100 C 5 60, 60 40, 30 0" />
+        <path class="steam-path" d="M70 200 C 45 160, 100 140, 70 100 C 45 60, 100 40, 70 0" />
+      </svg>
+    </div>
+
+    <div class="hero-content container-edit pb-16 md:pb-24 w-full">
+      <p class="eyebrow mb-5" style="color:#cfe0cf;">Specialty Coffee House — Est. Urban Corner</p>
+      <h1 class="max-w-3xl">Good Coffee.<br>Slow Moments.</h1>
+      <p class="max-w-md mt-6 text-base md:text-lg" style="color:#e8ddc9;">
+        Specialty coffee, fresh food and a space made for conversations.
+      </p>
+      <div class="flex flex-wrap gap-4 mt-9">
+        <a href="menu.html" class="btn btn-primary">View Menu <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        <a href="contact.html#visit" class="btn btn-outline-light">Find Us <i data-lucide="map-pin" class="w-4 h-4"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= FEATURED COFFEE ============================= -->
+  <section class="py-24 md:py-32 container-edit">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 reveal">
+      <div>
+        <p class="eyebrow mb-3">Featured Roasts</p>
+        <h2 class="text-3xl md:text-5xl max-w-lg">This week, we're pouring</h2>
+      </div>
+      <p class="max-w-sm text-sm" style="color:var(--bark);">
+        Four single-origin lots, cupped and chosen by our roasters for their clarity, sweetness and story worth telling.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <article class="paper-card reveal">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=700&q=80" alt="Latte art in a ceramic cup, part of the Kirinyaga Peaberry featured pour" loading="lazy">
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-3 mb-3">
+            <h3 class="text-xl leading-tight">Kirinyaga Peaberry</h3>
+            <span class="origin-stamp !w-16 !h-16 shrink-0">
+              <span class="stamp-top">Kenya</span>
+              <span class="stamp-main">1750m</span>
+            </span>
+          </div>
+          <p class="text-sm" style="color:var(--bark);">Blackcurrant, brown sugar, a clean citrus finish. Washed process, small-lot peaberry.</p>
+          <p class="price mt-4 text-lg">$6.50</p>
+        </div>
+      </article>
+
+      <article class="paper-card reveal" style="transition-delay:80ms;">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&q=80" alt="Roasted coffee beans from the Finca Santa Elena featured lot" loading="lazy">
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-3 mb-3">
+            <h3 class="text-xl leading-tight">Finca Santa Elena</h3>
+            <span class="origin-stamp !w-16 !h-16 shrink-0">
+              <span class="stamp-top">Colombia</span>
+              <span class="stamp-main">1900m</span>
+            </span>
+          </div>
+          <p class="text-sm" style="color:var(--bark);">Red apple, caramel, soft floral aroma. Honey process, family-run farm since 1974.</p>
+          <p class="price mt-4 text-lg">$6.00</p>
+        </div>
+      </article>
+
+      <article class="paper-card reveal" style="transition-delay:160ms;">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=700&q=80" alt="Flat white with detailed latte art, our house espresso pour" loading="lazy">
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-3 mb-3">
+            <h3 class="text-xl leading-tight">House Espresso Blend</h3>
+            <span class="origin-stamp !w-16 !h-16 shrink-0">
+              <span class="stamp-top">Blend</span>
+              <span class="stamp-main">3-Origin</span>
+            </span>
+          </div>
+          <p class="text-sm" style="color:var(--bark);">Dark chocolate, toasted hazelnut, syrupy body. Our everyday signature shot.</p>
+          <p class="price mt-4 text-lg">$5.00</p>
+        </div>
+      </article>
+
+      <article class="paper-card reveal" style="transition-delay:240ms;">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=700&q=80" alt="Ceremonial grade matcha latte, one of our featured pours" loading="lazy">
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-3 mb-3">
+            <h3 class="text-xl leading-tight">Ceremonial Matcha</h3>
+            <span class="origin-stamp !w-16 !h-16 shrink-0">
+              <span class="stamp-top">Uji</span>
+              <span class="stamp-main">Japan</span>
+            </span>
+          </div>
+          <p class="text-sm" style="color:var(--bark);">Stone-ground, whisked to order. Vegetal sweetness with a lingering umami finish.</p>
+          <p class="price mt-4 text-lg">$5.50</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================= MENU TEASER ============================= -->
+  <section class="py-24 md:py-28" style="background:var(--espresso); color:var(--cream);">
+    <div class="container-edit grid lg:grid-cols-2 gap-14 items-center">
+      <div class="reveal">
+        <p class="eyebrow mb-3" style="color:var(--gold);">The Full Menu</p>
+        <h2 class="text-3xl md:text-5xl mb-6" style="color:var(--cream);">Espresso to matcha, sandwiches to sweets</h2>
+        <p class="max-w-md mb-8" style="color:#d8cdb8;">
+          Eight categories, one page. Espresso, cappuccino, latte, cold coffee, matcha, sandwiches, pasta and desserts — browse the whole counter before you arrive.
+        </p>
+        <a href="menu.html" class="btn btn-outline-light">Browse Full Menu <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+      </div>
+      <div class="grid grid-cols-2 gap-4 reveal" style="transition-delay:120ms;">
+        <div class="menu-row py-3" style="border-bottom:1px solid rgba(247,240,228,0.15);">
+          <span>Espresso</span><span class="leader" style="border-color:rgba(247,240,228,0.3);"></span><span class="price">$3.50</span>
+        </div>
+        <div class="menu-row py-3" style="border-bottom:1px solid rgba(247,240,228,0.15);">
+          <span>Cappuccino</span><span class="leader" style="border-color:rgba(247,240,228,0.3);"></span><span class="price">$4.50</span>
+        </div>
+        <div class="menu-row py-3" style="border-bottom:1px solid rgba(247,240,228,0.15);">
+          <span>Iced Latte</span><span class="leader" style="border-color:rgba(247,240,228,0.3);"></span><span class="price">$5.00</span>
+        </div>
+        <div class="menu-row py-3" style="border-bottom:1px solid rgba(247,240,228,0.15);">
+          <span>Avocado Toast</span><span class="leader" style="border-color:rgba(247,240,228,0.3);"></span><span class="price">$9.50</span>
+        </div>
+        <div class="menu-row py-3" style="border-bottom:1px solid rgba(247,240,228,0.15);">
+          <span>Truffle Pasta</span><span class="leader" style="border-color:rgba(247,240,228,0.3);"></span><span class="price">$14.00</span>
+        </div>
+        <div class="menu-row py-3" style="border-bottom:1px solid rgba(247,240,228,0.15);">
+          <span>Basque Cheesecake</span><span class="leader" style="border-color:rgba(247,240,228,0.3);"></span><span class="price">$6.50</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= CAFÉ STORY ============================= -->
+  <section id="story" class="py-24 md:py-32 container-edit">
+    <div class="grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-5 reveal">
+        <p class="eyebrow mb-3">Our Story</p>
+        <h2 class="text-3xl md:text-5xl mb-6">Grown from a corner roastery, one cup at a time</h2>
+        <p class="mb-4" style="color:var(--bark);">
+          Brew &amp; Bloom opened as a single roasting bench and four stools. We kept the neighborhood habit of slowing down — a paper cup was never really the point.
+        </p>
+        <p class="mb-8" style="color:var(--bark);">
+          Today we source direct from farmers we've cupped with in person, roast in small batches twice a week, and bake through the morning so the room always smells like something coming out of the oven.
+        </p>
+        <div class="flex gap-10">
+          <div>
+            <p class="font-display text-3xl" style="color:var(--bloom);">12</p>
+            <p class="text-xs eyebrow" style="color:var(--bark);">Years Roasting</p>
+          </div>
+          <div>
+            <p class="font-display text-3xl" style="color:var(--bloom);">9</p>
+            <p class="text-xs eyebrow" style="color:var(--bark);">Origin Partners</p>
+          </div>
+          <div>
+            <p class="font-display text-3xl" style="color:var(--bloom);">100%</p>
+            <p class="text-xs eyebrow" style="color:var(--bark);">Direct Trade</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7 grid grid-cols-2 gap-4 reveal" style="transition-delay:100ms;">
+        <img src="https://images.unsplash.com/photo-1495465798138-718f86d1a4bd?w=700&q=80" alt="Barista carefully pouring coffee at the Brew & Bloom counter" class="w-full h-64 object-cover mt-8" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80" alt="Sunlit corner table inside Brew & Bloom with guests reading" class="w-full h-64 object-cover" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=700&q=80" alt="Interior view of the roastery and seating area" class="w-full h-64 object-cover" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=700&q=80" alt="Freshly roasted single-origin coffee beans" class="w-full h-64 object-cover mt-8" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= GALLERY PREVIEW ============================= -->
+  <section class="py-24 md:py-28" style="background:var(--beige);">
+    <div class="container-edit">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 reveal">
+        <div>
+          <p class="eyebrow mb-3">@brewandbloom</p>
+          <h2 class="text-3xl md:text-5xl">Inside the room</h2>
+        </div>
+        <a href="gallery.html" class="btn btn-outline">Open Full Gallery <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+      </div>
+
+      <div class="gallery-grid reveal">
+        <a href="gallery.html" class="gallery-item" aria-label="View full gallery">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=75" alt="Cozy seating corner with plants and warm lighting">
+        </a>
+        <a href="gallery.html" class="gallery-item" aria-label="View full gallery">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=75" alt="Cup of specialty coffee on a wooden table">
+        </a>
+        <a href="gallery.html" class="gallery-item" aria-label="View full gallery">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=75" alt="Fresh pastries in the display case">
+        </a>
+        <a href="gallery.html" class="gallery-item" aria-label="View full gallery">
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&q=75" alt="Latte art top-down view">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= CUSTOMER REVIEWS ============================= -->
+  <section class="py-24 md:py-32 container-edit">
+    <div class="text-center max-w-xl mx-auto mb-14 reveal">
+      <p class="eyebrow mb-3">Regulars Say</p>
+      <h2 class="text-3xl md:text-5xl">A neighborhood favorite</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="review-card reveal">
+        <p class="stars mb-4" aria-label="5 out of 5 stars">★★★★★</p>
+        <p class="mb-6" style="color:var(--bark);">"The Kirinyaga pour-over might be the best cup I've had outside of a roastery. Staff actually know their tasting notes."</p>
+        <p class="font-semibold">Maya R.</p>
+        <p class="text-xs" style="color:var(--bark);">Weekday regular</p>
+      </div>
+      <div class="review-card reveal" style="transition-delay:100ms;">
+        <p class="stars mb-4" aria-label="5 out of 5 stars">★★★★★</p>
+        <p class="mb-6" style="color:var(--bark);">"Came for the coffee, stayed for the truffle pasta. Feels like a proper hangout spot, not just a coffee shop."</p>
+        <p class="font-semibold">Daniel O.</p>
+        <p class="text-xs" style="color:var(--bark);">Sunday brunch</p>
+      </div>
+      <div class="review-card reveal" style="transition-delay:200ms;">
+        <p class="stars mb-4" aria-label="5 out of 5 stars">★★★★★</p>
+        <p class="mb-6" style="color:var(--bark);">"Reserved a table for a work meeting and nobody rushed us out. Basque cheesecake is worth the trip alone."</p>
+        <p class="font-semibold">Priya K.</p>
+        <p class="text-xs" style="color:var(--bark);">First-time visitor</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= OPENING HOURS + RESERVATION CTA ============================= -->
+  <section class="py-24 md:py-28" style="background:var(--bloom); color:var(--cream);">
+    <div class="container-edit grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <p class="eyebrow mb-3" style="color:var(--gold);">Opening Hours</p>
+        <h2 class="text-3xl md:text-4xl mb-6" style="color:var(--cream);">Come sit with us</h2>
+
+        <div class="space-y-3 mb-6 max-w-sm">
+          <div class="flex justify-between py-2" style="border-bottom:1px solid rgba(247,240,228,0.2);">
+            <span>Monday – Friday</span><span class="font-mono">8:00 AM – 10:00 PM</span>
+          </div>
+          <div class="flex justify-between py-2" style="border-bottom:1px solid rgba(247,240,228,0.2);">
+            <span>Saturday – Sunday</span><span class="font-mono">8:00 AM – 11:00 PM</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2" data-hours-indicator>
+          <span class="status-dot"></span>
+          <span class="text-sm font-mono" data-status-label>Checking today's hours…</span>
+        </div>
+      </div>
+
+      <div class="reveal" style="transition-delay:100ms;">
+        <div class="paper-card p-8 md:p-10" style="background:var(--paper);">
+          <h3 class="text-2xl mb-3">Reserve your table</h3>
+          <p class="mb-6" style="color:var(--bark);">Booking ahead means your favorite window seat is waiting, no matter the hour.</p>
+          <a href="contact.html#reserve" class="btn btn-primary w-full justify-center">Make a Reservation <i data-lucide="calendar" class="w-4 h-4"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="site-footer py-16">
+  <div class="container-edit grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <p class="logo-mark mb-4">Brew &amp; Bloom</p>
+      <p class="text-sm" style="color:#c9bda3;">Specialty coffee, fresh food and a space made for conversations.</p>
+      <div class="flex gap-3 mt-5">
+        <a href="#" aria-label="Instagram" class="p-2 border border-white/15 rounded-full"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+        <a href="#" aria-label="Facebook" class="p-2 border border-white/15 rounded-full"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+        <a href="#" aria-label="X (Twitter)" class="p-2 border border-white/15 rounded-full"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+      </div>
+    </div>
+    <div>
+      <p class="footer-heading">Explore</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="menu.html">Full Menu</a></li>
+        <li><a href="coffee.html">Coffee</a></li>
+        <li><a href="food.html">Food &amp; Desserts</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Visit</p>
+      <ul class="space-y-2 text-sm" style="color:#c9bda3;">
+        <li>24 Maple &amp; 3rd, Riverside District</li>
+        <li>Mon–Fri · 8:00 AM – 10:00 PM</li>
+        <li>Sat–Sun · 8:00 AM – 11:00 PM</li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Contact</p>
+      <ul class="space-y-2 text-sm" style="color:#c9bda3;">
+        <li>hello@brewandbloom.co</li>
+        <li>(555) 213-0847</li>
+        <li><a href="contact.html" class="underline">Contact form</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-edit mt-12 pt-6 flex flex-col sm:flex-row justify-between gap-3 text-xs" style="border-top:1px solid rgba(247,240,228,0.12); color:#a1937a;">
+    <p>© <span data-year></span> Brew &amp; Bloom Coffee House. All rights reserved.</p>
+    <p>Crafted with care for slow mornings.</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
